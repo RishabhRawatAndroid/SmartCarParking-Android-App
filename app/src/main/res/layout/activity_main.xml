@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage1"
+    tools:context="com.example.rishabh.smartcarparking.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="REGISTRATION:"
+        android:textColor="#E32636"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C70039"
+        android:hint="Your Name.."
+        android:inputType="textPersonName"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/phonetext"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textColor="#C70039"
+        android:id="@+id/phonetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Your Phone No.."
+        android:inputType="number"
+        android:layout_above="@+id/emailtext"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C70039"
+        android:hint="Your Email.."
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/carnametext"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/carnametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C70039"
+        android:hint="Your Car Plate Name.."
+        android:inputType="textPersonName"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/loginbtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha=".50"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="LOGIN"
+        android:onClick="LoginButtonMethod"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:layout_marginBottom="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+</RelativeLayout>

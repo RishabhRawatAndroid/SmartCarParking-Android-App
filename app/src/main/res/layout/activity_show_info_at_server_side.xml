@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2BEB5"
+    tools:context="com.example.rishabh.smartcarparking.ShowInfoAtServerSideActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="DRIVER DETAILS:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#8aa452"/>
+
+    <TextView
+        android:id="@+id/drivername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="29dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="NAME:"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/driveremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/drivername"
+        android:layout_below="@+id/drivername"
+        android:layout_marginTop="52dp"
+        android:text="EMAIL:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/driverphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE NO.:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/driveremail"
+        android:layout_alignStart="@+id/driveremail"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/drivercar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="CAR PLATE:"
+        android:layout_below="@+id/driverphone"
+        android:layout_alignStart="@+id/driverphone" />
+
+    <TextView
+        android:id="@+id/drivertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text="TIME:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/drivercar"
+        android:layout_alignStart="@+id/drivercar" />
+
+    <TextView
+        android:id="@+id/drivermoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/drivertime"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
